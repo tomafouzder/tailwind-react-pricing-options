@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "marks": {
+            "physics": 85,
+            "chemistry": 78,
+            "math": 90
+        }
+    },
+    {
+        "id": 2,
+        "name": "Brian Lee",
+        "marks": {
+            "physics": 75,
+            "chemistry": 82,
+            "math": 88
+        }
+    },
+    {
+        "id": 3,
+        "name": "Catherine Smith",
+        "marks": {
+            "physics": 92,
+            "chemistry": 89,
+            "math": 95
+        }
+    },
+    {
+        "id": 4,
+        "name": "David Miller",
+        "marks": {
+            "physics": 68,
+            "chemistry": 74,
+            "math": 70
+        }
+    },
+    {
+        "id": 5,
+        "name": "Ella Brown",
+        "marks": {
+            "physics": 88,
+            "chemistry": 91,
+            "math": 85
+        }
+    },
+    {
+        "id": 6,
+        "name": "Frank Wilson",
+        "marks": {
+            "physics": 72,
+            "chemistry": 65,
+            "math": 80
+        }
+    },
+    {
+        "id": 7,
+        "name": "Grace Thomas",
+        "marks": {
+            "physics": 95,
+            "chemistry": 93,
+            "math": 97
+        }
+    },
+    {
+        "id": 8,
+        "name": "Henry Clark",
+        "marks": {
+            "physics": 81,
+            "chemistry": 79,
+            "math": 84
+        }
+    },
+    {
+        "id": 9,
+        "name": "Isabella Davis",
+        "marks": {
+            "physics": 90,
+            "chemistry": 87,
+            "math": 92
+        }
+    },
+    {
+        "id": 10,
+        "name": "Jack White",
+        "marks": {
+            "physics": 70,
+            "chemistry": 73,
+            "math": 75
+        }
+    }
+]

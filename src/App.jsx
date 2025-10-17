@@ -4,6 +4,7 @@ import DaisyNav from './components/DaisyNav/DaisyNav'
 import Navbar from './components/DaisyNav/Navbar/Navbar'
 import PricingOptions from './components/DaisyNav/PricingOptions/PricingOptions'
 import { Divide } from 'lucide-react'
+import ResultChart from './components/ResultChart/ResultChart'
 
 const pricingPromise = fetch('pricingData.json').then(res => res.json());
 
@@ -25,6 +26,9 @@ function App() {
         }>
           <PricingOptions pricingPromise={pricingPromise} ></PricingOptions>
         </Suspense>
+
+
+        <ResultChart></ResultChart>
       </main>
 
 

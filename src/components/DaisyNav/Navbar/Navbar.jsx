@@ -41,10 +41,10 @@ const Navbar = () => {
         <nav className='flex justify-between mx-10 mt-6'>
             <span className='flex' onClick={() => setOpen(!open)}>
                 {open ?
-                    <X className='md:hidden'></X> :
-                    <Menu className='md:hidden'></Menu>}
+                    <X className='lg:hidden'></X> :
+                    <Menu className='lg:hidden'></Menu>}
 
-                <ul className={`md:hidden absolute rounded-box duration-1000
+                <ul className={`lg:hidden absolute rounded-box duration-1000
                      ${open ? 'top-18' : '-left-40'} 
                      bg-base-100 shadow dropdown-content text-white`}>
                     {links}
@@ -53,7 +53,7 @@ const Navbar = () => {
             </span>
 
             {/*Option: 3. when we create the url an another file and use link options in others file */}
-            <ul className='md:flex hidden'>
+            <ul className='lg:flex hidden'>
                 {
                     links
                 }
