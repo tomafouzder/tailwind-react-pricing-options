@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavLink from './NavLink';
+import { Menu, X } from 'lucide-react';
 
 const navigationData = [
     {
@@ -31,12 +32,30 @@ const navigationData = [
 
 
 const Navbar = () => {
+
+    const [open, setOpen] = useState(false);
+
+    const links = navigationData.map(route => <NavLink key={route.id} route={route}></NavLink>)
+
     return (
-        <nav>
+        <nav className='flex justify-between mx-10'>
+            <span className='flex' onClick={() => setOpen(!open)}>
+                {open ?
+                    <X className='md:hidden'></X> :
+                    <Menu className='md:hidden'></Menu>}
+
+                <ul className={`md:hidden absolute rounded-box duration-1000
+                     ${open ? 'top-10' : '-left-40'} 
+                     bg-base-100 shadow dropdown-content text-white`}>
+                    {links}
+                </ul>
+                <h3 className='ml-4 text-xl'>My Navbar</h3>
+            </span>
+
             {/*Option: 3. when we create the url an another file and use link options in others file */}
-            <ul className='flex'>
+            <ul className='md:flex hidden'>
                 {
-                    navigationData.map(route => <NavLink key={route.id} route={route}></NavLink>)
+                    links
                 }
             </ul>
 
@@ -61,6 +80,8 @@ const Navbar = () => {
                 <li className='mr-10'><a href="/about">About</a></li>
                 <li className='mr-10'><a href="/blog">Blog</a></li>
             </ul> */}
+
+            <button>Sing In</button>
         </nav>
     );
 };
